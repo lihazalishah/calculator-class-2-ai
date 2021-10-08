@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>class 2</h1>
+    number1: <input type="text" id="num1">
+    <br>
+    number2: <input type="text" id="num2">
+     <br>
+     <button onclick="Addition()">sum</button>
+     <button onclick="Subtraction()">sub</button>
+
+     <button onclick="Multiplication()">mul</button>
+
+     <button onclick="div()">div</button>
+
+
+     <script>
+         function Addition(){
+             let number1=document.getElementById("num1").value
+             let number2=document.getElementById("num2").value
+
+             let addition = Number(number1) + Number(number2);
+             console.log("addition ==", addition);
+         }
+         function Subtraction(){
+             let number1=document.getElementById("num1").value
+             let number2=document.getElementById("num2").value
+
+             let sub = Number(number1) - Number(number2);
+             console.log("subtraction ==", sub);
+         }
+         function Multiplication(){
+             let number1=document.getElementById("num1").value
+             let number2=document.getElementById("num2").value
+
+             let mul = Number(number1) * Number(number2);
+             console.log("multiplication ==", mul);
+         }
+         function div(){
+             let number1=document.getElementById("num1").value
+             let number2=document.getElementById("num2").value
+
+             let div = Number(number1) / Number(number2);
+             console.log("division ==", div);
+         }
+     </script>
+
+</body>
+</html>
